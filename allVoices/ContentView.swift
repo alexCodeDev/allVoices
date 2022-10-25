@@ -16,29 +16,39 @@ struct ContentView: View {
                 RecordingsList(audioRecorder: audioRecorder)
                 if audioRecorder.recording == false {
                     Button(action: {print(self.audioRecorder.startRecording())}) {
-                        Image(systemName: "circle.fill")
+                        Image(systemName: "record.circle")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
+                            .frame(width: 70, height: 70)
                             .clipped()
                             .foregroundColor(.red)
-                            .padding(.bottom, 40)
+                            .padding(.bottom, 0)
                     }
                 } else {
-                    Button(action: {self.audioRecorder.stopRecording()}) {
-                        Image(systemName: "stop.fill")
+                    HStack{
+                        Text("Voice recording")
+                        Image(systemName: "tortoise")
                             .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
-                            .clipped()
-                            .foregroundColor(.red)
-                            .padding(.bottom, 40)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                            
+                            .foregroundColor(.green)
                     }
+                    HStack {
+                        Button(action: {self.audioRecorder.stopRecording()} ) {
+                            Image(systemName: "stop.circle.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 70, height: 70)
+                                .clipped()
+                                .foregroundColor(.red)
+                                .padding(.bottom, 0)
+                        }
+                    }
+                    
+                    
                 }
             }
-//            VStack{
-//                Text("234")
-//            }
                 .navigationBarTitle("Recordings")
                 .navigationBarItems(trailing: EditButton())
         }

@@ -90,7 +90,6 @@
 		1FFD4DFD28CA069D00D3D3C6 = {
 			isa = PBXGroup;
 			children = (
-				1FC1077528D8ABE300114AE7 /* Helper.swift */,
 				1FFD4E0828CA069D00D3D3C6 /* allVoices */,
 				1FFD4E1E28CA069E00D3D3C6 /* allVoicesTests */,
 				1FFD4E2828CA069E00D3D3C6 /* allVoicesUITests */,
@@ -111,17 +110,18 @@
 		1FFD4E0828CA069D00D3D3C6 /* allVoices */ = {
 			isa = PBXGroup;
 			children = (
+				1FC1077528D8ABE300114AE7 /* Helper.swift */,
 				1FFD4E0928CA069D00D3D3C6 /* allVoicesApp.swift */,
 				1FFD4E0B28CA069D00D3D3C6 /* ContentView.swift */,
 				1FFD4E0D28CA069E00D3D3C6 /* Assets.xcassets */,
 				1FFD4E1228CA069E00D3D3C6 /* Persistence.swift */,
 				1FFD4E1428CA069E00D3D3C6 /* allVoices.xcdatamodeld */,
-				1FFD4E0F28CA069E00D3D3C6 /* Preview Content */,
 				1FFD4E3828CA162D00D3D3C6 /* AudioRecorder.swift */,
 				1FC1077728D9DAFB00114AE7 /* AudioPlayer.swift */,
 				1FC1077328D89D1300114AE7 /* RecordingDataModel.swift */,
 				1FC1076F28D498F000114AE7 /* RecordingsList.swift */,
 				1FC1077128D8395500114AE7 /* Extensions.swift */,
+				1FFD4E0F28CA069E00D3D3C6 /* Preview Content */,
 			);
 			path = allVoices;
 			sourceTree = "<group>";
